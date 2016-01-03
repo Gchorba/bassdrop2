@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/soundrecorder_list_item.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/soundrecorder_list_item.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/devicelist.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/devicelist.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/musicplayer_list_item.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/musicplayer_list_item.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/soundrecorder.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/soundrecorder.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/musicplayer.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/musicplayer.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/device_list_item.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/layout/device_list_item.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/3.0.0/res/layout/main.xml"
+    }
+]

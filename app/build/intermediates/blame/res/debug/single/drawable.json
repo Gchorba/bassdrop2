@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/music_item.png",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/music_item.png"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/bg.png",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/bg.png"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/pause_btn.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/pause_btn.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/music.png",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/music.png"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/refresh_btn.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/refresh_btn.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/play_btn.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/play_btn.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/soundrecorder.png",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/soundrecorder.png"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/prev_btn.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/prev_btn.xml"
+    },
+    {
+        "merged": "/Users/gene/Downloads/wirelessomni1/app/build/intermediates/res/merged/debug/drawable/next_btn.xml",
+        "source": "/Users/gene/Downloads/wirelessomni1/app/src/main/res/drawable/next_btn.xml"
+    }
+]
