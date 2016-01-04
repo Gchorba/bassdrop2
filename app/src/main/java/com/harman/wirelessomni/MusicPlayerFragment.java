@@ -36,7 +36,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MusicPlayerFragment extends Fragment {
-	
+
 	static class Mp3Info {
 		long id;
 		String url;
@@ -224,7 +224,7 @@ public class MusicPlayerFragment extends Fragment {
 	    return true;
 	}
 	
-	private void playMusic() {
+	public void playMusic() {
 		if (mp3Infos.isEmpty())
 			return;
 		if (Util.getInstance().getDevices().size() == 0) {
@@ -281,7 +281,7 @@ public class MusicPlayerFragment extends Fragment {
 		getActivity().startService(intent);
 	}
 	
-	private void nextMusic() {
+	public void nextMusic() {
 		if (mp3Infos.isEmpty())
 			return;
 		int num = mp3Infos.size();

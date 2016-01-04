@@ -46,7 +46,7 @@ public class MainActivity extends FragmentActivity  {
 	public final static int TAB_INDEX_MUSICPLAYER = 1;  
 	public final static int TAB_INDEX_SOUNDRECORDER = 2;  
 	public final static int TAB_COUNT = 3;
-	
+	int x =1;
 	private static HKWirelessUtil hkwireless = HKWirelessUtil.getInstance();
 	private static PcmCodecUtil pcmCodec = PcmCodecUtil.getInstance();
 
@@ -88,29 +88,49 @@ public class MainActivity extends FragmentActivity  {
 					Log.i("receiveData", "Got message from Pebble!");
 
 					// Up received?
-					if(dict.getInteger(KEY_BUTTON_UP) != null) {
-						Message msg = new Message();
-						msg.what = musicPlayerFragment.CMD_STOP;
+					if (dict.getInteger(KEY_BUTTON_DOWN) != null) {
+						List<DeviceData> devices = Util.getInstance().getDevices();
+						for (int i=0; i<devices.size(); i++) {
+							if (Util.getInstance().getDeviceStatus(i)) {
+								long deviceId = devices.get(i).deviceObj.deviceId;
+								int volume = pcmCodec.getDeviceVolume(deviceId);
+								volume -= 5;
+								if (volume > 0)
+									pcmCodec.setVolumeDevice(deviceId, volume);
+							}
+						}
 
 					}
 // Select received?
-					if(dict.getInteger(KEY_BUTTON_SELECT) != null) {
-
-							Message msg = new Message();
-							msg.what = musicPlayerFragment.CMD_NEXT;
-							musicPlayerFragment.handler.sendMessage(msg);
+					if (dict.getInteger(KEY_BUTTON_SELECT) != null) {
+						if (x==1) {
+						Message msg = new Message();
+						msg.what = musicPlayerFragment.CMD_STOP;
+						musicPlayerFragment.handler.sendMessage(msg);
+						x=2;
+						}
+						else {
+							//Message msg = new Message();
+							//msg.what = musicPlayerFragment.CMD_NEXT;
+							musicPlayerFragment.playMusic();
+							x=1;
+						}
 
 					}
 					// Down received?
-					if(dict.getInteger(KEY_BUTTON_DOWN) != null) {
-						if (musicPlayerFragment != null) {
-							Message msg = new Message();
-							msg.what = musicPlayerFragment.CMD_NEXT;
-							musicPlayerFragment.handler.sendMessage(msg);
+					if (dict.getInteger(KEY_BUTTON_UP) != null) {
+						List<DeviceData> devices = Util.getInstance().getDevices();
+						for (int i = 0; i < devices.size(); i++) {
+							if (Util.getInstance().getDeviceStatus(i)) {
+								long deviceId = devices.get(i).deviceObj.deviceId;
+								int volume = pcmCodec.getDeviceVolume(deviceId);
+								volume += 3;
+								if (volume <= pcmCodec.getMaximumVolumeLevel())
+									pcmCodec.setVolumeDevice(deviceId, volume);
+							}
 						}
 					}
 				}
-
 			};
 			PebbleKit.registerReceivedDataHandler(getApplicationContext(), mDataReceiver);
 		}
